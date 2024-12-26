@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(192, 211, 236);
+    background-color: #382ca0;;
     font-family: 'Arial Nova', Times, serif;
     line-height: 1,6;
 }
@@ -11,3 +11,112 @@ body {
 .section {
     padding: 4rem 2rem;
 }
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #c0d3ec;
+}
+
+.expierence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}    
+.expierence-card {
+    background-color: aliceblue;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #00001a;
+    transition: transform 0,3s ease;
+}
+.expierence-card:hover{
+    transform: translateY(-5px);
+
+}
+.expierence-image{
+    width: 100%;
+    height: auto;
+}
+.berufserfahrung-info {
+    padding: 1,5rem;
+
+}
+.section title{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #0a192f;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background:#382ca0 ;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+nav a {
+    color: azure;
+    text-decoration: none;
+    margin-left: 2rem;
+
+}
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background: #0a192f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+}
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px
+    #64ffda4d;
+
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    overflow: hidden;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    z-index: 1;
+
+}
+#player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: 0 2rem;
+
+}
+ .highlight {
+    color: #64ffda;
+    }
