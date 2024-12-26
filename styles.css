@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(192, 211, 236);
+    font-family: 'Arial Nova', Times, serif;
+    line-height: 1,6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section {
+    padding: 4rem 2rem;
+}
