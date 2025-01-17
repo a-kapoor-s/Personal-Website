@@ -3,9 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich</title>
+    <title>Über mich - Ashveen Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #382ca0;
+            --accent-color: #64ffda;
+            --text-light: #ffffff;
+            --text-dark: #0a192f;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            opacity: 0.8;
+        }
+
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+
+        .about-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .about-info h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .about-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .about-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem;
+            border-radius: 4px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .skill-item:hover {
+            background: rgba(100, 255, 218, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .interests-list {
+            list-style: none;
+        }
+
+        .interests-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .interests-list li::before {
+            content: "•";
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .about-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-info h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <a href="./../index.html" class="back-button">← Zurück zur Startseite</a>
+        
+        <div class="about-header">
+            <img src="/img/github-pfp.png" alt="Ashveen Singh" class="profile-image">
+            <div class="about-info">
+                <h1>Über mich</h1>
+                <h2>Studentin & angehende Hobby Web Designerin </h2>
+                <p>Willkommen auf meiner persönlichen Seite! Hier erfahren Sie mehr über mich und meine Interessen.</p>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-section">
+                <h3>Persönlicher Werdegang</h3>
+                <p>Als Student mit Leidenschaft für Technologie und Innovation strebe ich danach, meine Fähigkeiten kontinuierlich weiterzuentwickeln. Mein Weg führte mich durch verschiedene praktische Erfahrungen, die meine technischen und persönlichen Kompetenzen geprägt haben.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Technische Fähigkeiten</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML/CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">Figma</div>
+                    <div class="skill-item">Photoshop</div>
+                    <div class="skill-item">MS Office</div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Persönliche Interessen</h3>
+                <ul class="interests-list">
+                    <li>Webentwicklung und neue Technologien</li>
+                    <li>Künstliche Intelligenz und maschinelles Lernen</li>
+                    <li>Open Source Projekte</li>
+                    <li>Fotografie und digitale Medien</li>
+                    <li>Fitness und aktiver Lebensstil</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h3>Ziele & Vision</h3>
+                <p>Mein Ziel ist es, innovative technische Lösungen zu entwickeln, die einen positiven Einfluss auf die Gesellschaft haben. Ich strebe danach, mich kontinuierlich weiterzubilden und meine Fähigkeiten in einem dynamischen Umfeld einzusetzen.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
